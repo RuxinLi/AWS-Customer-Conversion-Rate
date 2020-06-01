@@ -1,37 +1,29 @@
-## Welcome to GitHub Pages
+## Projects Overview
 
-You can use the [editor on GitHub](https://github.com/RuxinLi/AWS-Customer-Conversion-Rate/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+The object of this analysis is to develop a model for an e-commerce company that predicts user conversion rate using AWS’ Amazon SageMaker service, and in doing so identify important features in predicting user conversion. These insights will provide the foundation for a recommendation as to how best the company can increase its conversion rate.
+<br/>
+<br/>
+Our task in this project was to produce a tool for assisting in selecting promising showroom locations based on predicted revenue for these locations output from a model that we created.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Amason SageMaker
+The analysis of the customer data was primarily done on AWS platform with SageMaker.AWS SageMaker a machine learning Integrated Development Environment (IDE) for building, training, and debugging models. In this analysis, I created a S3 bucket for data and model storage. In the SageMaker, I developed and trained my model using the pre-built XGBoost algorithm provided by AWS in a new Notebook Instance.
+![Sagemaker](images/HXH-WbrQ.png)
+<br/>
+[Click here to view my model](https://public.tableau.com/profile/zhongyi1091#!/vizhome/Ferguson_Tool_final/ShowroomSelection?publish=yes)
 
-### Markdown
+## Results 
+![Results](images/HXH-WbrQ.png)
+The model produced yielded an overall accuracy of 98.6%, along with a precision of 84.55% and recall of 68.47%, a strong performance. An additional metric used to assess the model was the Receiver Operator Characteristics, or ROC, curve. Specifically, the area under the curve (AUC) was evaluated. This value was calculated to be 0.9853, indicating the model is an excellent classifier.
+<br/>
+![Results](images/HXH-WbrQ.png)
+The ‘feature importances’ were extracted from the trained model, and were used to identify the most important features in predicting user conversion. These results indicated user age and the number of pages visited were overwhelmingly the most significant predictors of user conversion. Other significant predictors included whether or not a user was new, and whether or not they were from China, although these effects were to a much lesser extent than age or number of pages visited. A final observation is that the marketing channel seemed to have very little effect on predicting user conversion.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Recommendations
 
-```markdown
-Syntax highlighted code block
+-	The site has high rates of success among young users. Marketing should advertise through a channel which is likely to reach young people.<br/>
+-	Users with old accounts have a higher conversion rate. Ways to bring them back to the site, such as targeted emails with offers could be a worthwhile idea.<br/>
+-	Something is wrong with the site reaching Chinese audiences. Perhaps this version is poorly translated or doesn’t fit the local culture. China is a very large market, so identifying the issue and fixing it should be a top priority.<br/>
+-	The site performs poorly among older users. From 30 years old and beyond, the conversion rate starts dropping noticeably. Perhaps an investigation into the UI would be worthwhile.<br/>
+-	Users who have visited many pages but have not converted likely have high purchase intent. These users are probably the easiest group to convert. Marketing could send them targeted emails with offers or reminders to encourage buying behavior.
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/RuxinLi/AWS-Customer-Conversion-Rate/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
