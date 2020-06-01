@@ -7,7 +7,7 @@ Our task in this project was to produce a tool for assisting in selecting promis
 
 ## Amason SageMaker
 The analysis of the customer data was primarily done on AWS platform with SageMaker.AWS SageMaker a machine learning Integrated Development Environment (IDE) for building, training, and debugging models. In this analysis, I created a S3 bucket for data and model storage. In the SageMaker, I developed and trained my model using the pre-built XGBoost algorithm provided by AWS in a new Notebook Instance.
-![Sagemaker](images/sagemaker.jpg)
+![Sagemaker](images/sagemaker.JPG)
 <br/>
 [Click here to view my model](/notebook/index.html)
 
