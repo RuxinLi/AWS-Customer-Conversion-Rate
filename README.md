@@ -13,9 +13,11 @@ The analysis of the customer data was primarily done on AWS platform with SageMa
 
 ## Results 
 ![Results](images/ROV.png)
+<br/>
 The model produced yielded an overall accuracy of 98.6%, along with a precision of 84.55% and recall of 68.47%, a strong performance. An additional metric used to assess the model was the Receiver Operator Characteristics, or ROC, curve. Specifically, the area under the curve (AUC) was evaluated. This value was calculated to be 0.9853, indicating the model is an excellent classifier.
 <br/>
 ![Results](images/XGB.png)
+<br/>
 The ‘feature importances’ were extracted from the trained model, and were used to identify the most important features in predicting user conversion. These results indicated user age and the number of pages visited were overwhelmingly the most significant predictors of user conversion. Other significant predictors included whether or not a user was new, and whether or not they were from China, although these effects were to a much lesser extent than age or number of pages visited. A final observation is that the marketing channel seemed to have very little effect on predicting user conversion.
 
 ## Recommendations
