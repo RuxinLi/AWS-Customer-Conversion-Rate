@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Projects Overview | AWS-Customer-Conversion-Rate</title>
+<meta name="generator" content="Jekyll v3.8.7" />
+<meta property="og:title" content="Projects Overview" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="https://ruxinli.github.io/AWS-Customer-Conversion-Rate/" />
+<meta property="og:url" content="https://ruxinli.github.io/AWS-Customer-Conversion-Rate/" />
+<meta property="og:site_name" content="AWS-Customer-Conversion-Rate" />
+<script type="application/ld+json">
+{"@type":"WebSite","headline":"Projects Overview","url":"https://ruxinli.github.io/AWS-Customer-Conversion-Rate/","name":"AWS-Customer-Conversion-Rate","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/AWS-Customer-Conversion-Rate/assets/css/style.css?v=4eebb1ca2714be53f99824f641fb30474ce1c4e8">
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="https://ruxinli.github.io/AWS-Customer-Conversion-Rate/">AWS Customer Conversion Rate</a></h1>
+
+
+
+        <p></p>
+
+        <p class="view"><a href="/AWS-Customer-Conversion-Rate/notebook/index.html">View My Notebook instance</a></p>
+        <p class="view"><a href="https://github.com/RuxinLi/AWS-Customer-Conversion-Rate">View the Project on GitHub <small>RuxinLi</small></a></p>
+        <img src="/AWS-Customer-Conversion-Rate/images/aws.png" alt="Results" />
+
+      </header>
+      <section>
+
+      <h2 id="projects-overview">Projects Overview</h2>
+
+<p>The object of this analysis is to develop a model for an e-commerce company that predicts user conversion rate using AWS’ Amazon SageMaker service, and in doing so identify important features in predicting user conversion. These insights will provide the foundation for a recommendation as to how best the company can increase its conversion rate.
+<br />
+<br />
+Our task in this project was to produce a tool for assisting in selecting promising showroom locations based on predicted revenue for these locations output from a model that we created.</p>
+
+<h2 id="amason-sagemaker">Amason SageMaker</h2>
+<p>The analysis of the customer data was primarily done on AWS platform with SageMaker.AWS SageMaker a machine learning Integrated Development Environment (IDE) for building, training, and debugging models. In this analysis, I created a S3 bucket for data and model storage. In the SageMaker, I developed and trained my model using the pre-built XGBoost algorithm provided by AWS in a new Notebook Instance.
+<br />
+<img src="/AWS-Customer-Conversion-Rate/images/sagemaker.JPG" alt="Sagemaker" />
+<br />
+<a href="/AWS-Customer-Conversion-Rate/notebook/index.html">Click here to view my model</a></p>
+<br />
+<h2 id="results">Results</h2>
+<p><img src="/AWS-Customer-Conversion-Rate/images/ROV.png" alt="Results" />
+<br />
+The model produced yielded an overall accuracy of 98.6%, along with a precision of 84.55% and recall of 68.47%, a strong performance. An additional metric used to assess the model was the Receiver Operator Characteristics, or ROC, curve. Specifically, the area under the curve (AUC) was evaluated. This value was calculated to be 0.9853, indicating the model is an excellent classifier.
+<br />
+<img src="/AWS-Customer-Conversion-Rate/images/XGB.png" alt="Results" />
+<br />
+The ‘feature importances’ were extracted from the trained model, and were used to identify the most important features in predicting user conversion. These results indicated user age and the number of pages visited were overwhelmingly the most significant predictors of user conversion. Other significant predictors included whether or not a user was new, and whether or not they were from China, although these effects were to a much lesser extent than age or number of pages visited. A final observation is that the marketing channel seemed to have very little effect on predicting user conversion.</p>
+
+<h2 id="recommendations">Recommendations</h2>
+
+<ul>
+  <li>The site has high rates of success among young users. Marketing should advertise through a channel which is likely to reach young people.<br /></li>
+  <li>Users with old accounts have a higher conversion rate. Ways to bring them back to the site, such as targeted emails with offers could be a worthwhile idea.<br /></li>
+  <li>Something is wrong with the site reaching Chinese audiences. Perhaps this version is poorly translated or doesn’t fit the local culture. China is a very large market, so identifying the issue and fixing it should be a top priority.<br /></li>
+  <li>The site performs poorly among older users. From 30 years old and beyond, the conversion rate starts dropping noticeably. Perhaps an investigation into the UI would be worthwhile.<br /></li>
+  <li>Users who have visited many pages but have not converted likely have high purchase intent. These users are probably the easiest group to convert. Marketing could send them targeted emails with offers or reminders to encourage buying behavior.</li>
+</ul>
+
+
+
+      </section>
+      <footer>
+
+        <p>This project is maintained by <a href="https://github.com/RuxinLi">RuxinLi</a></p>
+
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/AWS-Customer-Conversion-Rate/assets/js/scale.fix.js"></script>
+
+  </body>
+</html>
